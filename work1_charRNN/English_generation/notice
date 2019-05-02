@@ -1,0 +1,8 @@
+# 原始文件处理------raw_processing.py
+# 模型训练------training
+    # 处理后数据读入------read_util.py
+    # 模型定义------model.py
+    # 训练------train.py  (训练1500次，损失3.3762)
+# 模型使用------testing
+    # 测试------test_model.py
+    # 测试数据生成可读文件------test_model.py
