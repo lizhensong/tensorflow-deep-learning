@@ -10,8 +10,8 @@ model = build_model(
     embedding_dim=embedding_dim,
     batch_size=batch_size)
 model.summary()
-model.compile(optimizer=tf.train.AdamOptimizer(),
+model.compile(optimizer=tf.train.AdamOptimizer(learning_rate=0.01),
               loss=tf.keras.losses.sparse_categorical_crossentropy)
-train_data = read_util.data('../data/shakespeare_int.txt', batch_size=batch_size)
-history = model.fit(train_data, steps_per_epoch=1000)
+train_data = read_util.data('../data/poetry_int.txt', batch_size=batch_size)
+history = model.fit(train_data, steps_per_epoch=10000)
 model.save_weights('../checkpoints/my_checkpoint')
