@@ -1,0 +1,7 @@
+使用数据集imdb，二分类
+n_grams_mlp     使用tf-idf编码特征
+                使用多层感知机实现分类
+                少量训练 测试0.9
+sequence_sepCNN 使用embedding编码特征
+                使用深度可分离卷积神经网络实现分类
+                少量训练 测试0.9
