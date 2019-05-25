@@ -5,3 +5,6 @@ n_grams_mlp     使用tf-idf编码特征
 sequence_sepCNN 使用embedding编码特征
                 使用深度可分离卷积神经网络实现分类
                 少量训练 测试0.9
+sequence_lstmRNN使用embedding编码特征
+                使用lstm循环神经网络实现分类
+                少量训练 测试0.9
